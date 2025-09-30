@@ -1,0 +1,71 @@
+/* Custom Styles for the New Design */
+.register-container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa; /* Light background for the whole page */
+}
+
+.design-card {
+    display: flex;
+    width: 80%; /* Adjust as needed */
+    max-width: 1000px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; /* Large border radius */
+    overflow: hidden; /* To contain the image and form sections */
+    background-color: #fff;
+}
+
+.image-col {
+    flex: 1;
+    min-height: 550px; /* Ensure a minimum height */
+    /* IMPORTANT: Keep the URL here, but remember it must be a RELATIVE path to the public directory */
+    background-image: url('../images/chair2.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.form-col {
+    flex: 1;
+    padding: 40px 60px; /* Increased padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.custom-input {
+    height: 50px;
+    border-radius: 8px; /* Rounded corners for inputs */
+    border: none;
+    background-color: #f1f1f1; /* Lighter background for the input fields */
+    padding-left: 20px;
+}
+
+.custom-btn {
+    background-color: #d9863c; /* The rich orange/brown color from the image */
+    border-color: #d9863c;
+    color: white;
+    padding: 10px 0;
+    border-radius: 8px; /* Rounded corners for the button */
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+.custom-btn:hover {
+    background-color: #c47734; /* Slightly darker on hover */
+    border-color: #c47734;
+}
+.text-link {
+    color: #d9863c; /* Match the button color */
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* Adjustments to match the simplified form labels */
+.form-label-simple {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
